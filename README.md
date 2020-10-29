@@ -36,7 +36,7 @@ Snapshot anything, this allow you to improve your tests by doing thing like:
 A personal package that leverage type inference when working with codable.
 
 ## TODO Next
-
+* Show an alert when a error occurs. (right now the VM gets the error but is not displayed in UI)
 * Improve UI by using UICollectionView + CompositionalLayout + DiffableDataSource
 * Separate *Mercado Libre Client* to its own package to make more explicitly the depency to it
 * Separate *Mercado Libre Live Implementation* so it is only imported and used on the SceneDelegate when launching the app
