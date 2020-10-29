@@ -23,11 +23,11 @@ class SearchViewController: UITableViewController {
         
         searchController.searchBar.autocapitalizationType = .none
         searchController.searchBar.delegate = self
-        searchController.searchBar.placeholder = "search - change me"
+        searchController.searchBar.placeholder = "search.bar.title".localized
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         
-        self.title = "Search Mercado libre"
+        self.title = "navigation.bar.title".localized
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         configureBindings()
     }

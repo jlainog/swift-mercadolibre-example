@@ -23,6 +23,8 @@
 		215B4148254A70FB00604B52 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4147254A70FB00604B52 /* SearchViewControllerTests.swift */; };
 		215B4152254A72EC00604B52 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 215B4151254A72EC00604B52 /* SnapshotTesting */; };
 		215B4156254A762E00604B52 /* MercadoLibreApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4155254A762E00604B52 /* MercadoLibreApiTests.swift */; };
+		215B415E254A7DE000604B52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 215B415D254A7DE000604B52 /* Localizable.strings */; };
+		215B4163254A7EBD00604B52 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4162254A7EBD00604B52 /* String+Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		215B413F254A4C1500604B52 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		215B4147254A70FB00604B52 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 		215B4155254A762E00604B52 /* MercadoLibreApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreApiTests.swift; sourceTree = "<group>"; };
+		215B415D254A7DE000604B52 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		215B4162254A7EBD00604B52 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,16 +104,17 @@
 		215B40C82549F51500604B52 /* MercadoLibreExample */ = {
 			isa = PBXGroup;
 			children = (
-				215B411F254A068C00604B52 /* MercadoLibre */,
+				215B4161254A7EB100604B52 /* Extensions */,
 				215B4114254A061C00604B52 /* Combine */,
+				215B415A254A7D8E00604B52 /* Core */,
+				215B411F254A068C00604B52 /* MercadoLibre */,
+				215B4159254A7D2900604B52 /* UI */,
 				215B40C92549F51500604B52 /* AppDelegate.swift */,
 				215B40CB2549F51500604B52 /* SceneDelegate.swift */,
-				215B40CD2549F51500604B52 /* SearchViewController.swift */,
-				215B4139254A455300604B52 /* SearchViewModel.swift */,
-				215B4128254A3C4500604B52 /* DetailViewController.swift */,
+				215B415D254A7DE000604B52 /* Localizable.strings */,
 				215B40D22549F51600604B52 /* Assets.xcassets */,
-				215B40D42549F51600604B52 /* LaunchScreen.storyboard */,
 				215B40D72549F51600604B52 /* Info.plist */,
+				215B40D42549F51600604B52 /* LaunchScreen.storyboard */,
 			);
 			path = MercadoLibreExample;
 			sourceTree = "<group>";
@@ -147,6 +152,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		215B4159254A7D2900604B52 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				215B40CD2549F51500604B52 /* SearchViewController.swift */,
+				215B4128254A3C4500604B52 /* DetailViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		215B415A254A7D8E00604B52 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				215B4139254A455300604B52 /* SearchViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		215B4161254A7EB100604B52 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				215B4162254A7EBD00604B52 /* String+Localized.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				215B40D62549F51600604B52 /* LaunchScreen.storyboard in Resources */,
+				215B415E254A7DE000604B52 /* Localizable.strings in Resources */,
 				215B40D32549F51600604B52 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215B4163254A7EBD00604B52 /* String+Localized.swift in Sources */,
 				215B40CE2549F51500604B52 /* SearchViewController.swift in Sources */,
 				215B411B254A066100604B52 /* Cancellation.swift in Sources */,
 				215B413A254A455300604B52 /* SearchViewModel.swift in Sources */,

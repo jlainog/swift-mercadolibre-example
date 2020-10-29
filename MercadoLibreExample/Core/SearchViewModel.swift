@@ -37,7 +37,6 @@ class SearchViewModel {
             .receive(on: dependencies.mainQueue)
             .sink(
                 receiveCompletion: { [weak self] completion in
-                    print(completion)
                     guard let self = self else { return }
 
                     switch completion {
@@ -50,7 +49,6 @@ class SearchViewModel {
                 },
                 receiveValue: { [weak self] value in
                     guard let self = self else { return }
-                    print(value)
                     self.results = value
                     self.isRequestInFlight = false
                 }

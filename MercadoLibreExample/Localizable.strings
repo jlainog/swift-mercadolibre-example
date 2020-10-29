@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  MercadoLibreExample
+
+  Created by Jaime Laino on 28/10/20.
+  
+*/
+
+"navigation.bar.title" = "Mercado Libre Search";
+"search.bar.title" = "Search";
