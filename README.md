@@ -2,7 +2,7 @@
 
 A simple example app that uses MercadoLibre API to search for products.
 
-![gif](/RocketSim.png)
+![gif](/RocketSim.gif)
 
 ## Architecture
 
