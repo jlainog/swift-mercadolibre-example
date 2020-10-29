@@ -3,15 +3,15 @@ import CombineSchedulers
 
 class SearchViewModel {
     struct Dependencies {
-        var search: (String) -> AnyPublisher<[String], URLError>
+        var search: (String) -> AnyPublisher<[MercadoLibre.Item], URLError>
         var mainQueue: AnySchedulerOf<DispatchQueue> = DispatchQueue.main.eraseToAnyScheduler()
     }
 
     private var cancellables = Set<AnyCancellable>()
     let dependencies: Dependencies
     @Published private(set) var query = ""
-    @Published private(set) var results = [String]()
-    @Published private(set) var selectedResult: String?
+    @Published private(set) var results = [MercadoLibre.Item]()
+    @Published private(set) var selectedResult: MercadoLibre.Item?
     @Published private(set) var isRequestInFlight = false
     @Published private(set) var errorMessage = ""
     

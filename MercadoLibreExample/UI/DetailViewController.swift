@@ -1,9 +1,16 @@
 import UIKit
 
 final class DetailViewController: UIViewController {
-    var selected: String
+    private var stack: UIStackView = {
+        let stack = UIStackView()
+        stack.alignment = .leading
+        stack.axis = .vertical
+        stack.distribution = .fillProportionally
+        return stack
+    }()
+    var selected: MercadoLibre.Item
     
-    init(_ selected: String) {
+    init(_ selected: MercadoLibre.Item) {
         self.selected = selected
         super.init(nibName: nil, bundle: nil)
     }
@@ -14,26 +21,28 @@ final class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Details - change me"
+        self.title = "navigation.detail.title".localized
         self.view.backgroundColor = .white
         
-        let name = UILabel()
-        name.numberOfLines = 0
-        name.text = selected
-        
-        let stack = UIStackView()
-        stack.addArrangedSubview(name)
-        stack.alignment = .leading
-        stack.axis = .vertical
-        stack.distribution = .fillProportionally
         self.view.addSubview(stack)
         stack.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stack.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            stack.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            stack.topAnchor.constraint(equalTo: self.view.topAnchor),
-            stack.bottomAnchor.constraint(greaterThanOrEqualTo: self.view.bottomAnchor)
-//                .constraint(equalTo: self.view.bottomAnchor),
+            stack.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            stack.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: 8),
+            stack.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20),
         ])
+        
+        buildLabel(prefix: "detail.name", selected.title)
+        buildLabel(prefix: "detail.domain", selected.domainId)
+        buildLabel(prefix: "detail.category", selected.category)
+        buildLabel(prefix: "detail.acceptsMercadopago", selected.acceptsMercadopago?.description.localized)
+    }
+    
+    private func buildLabel(prefix: String, _ str: String?) {
+        guard let str = str else { return }
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.text = prefix.localized + str
+        stack.addArrangedSubview(label)
     }
 }

@@ -10,16 +10,23 @@ import Combine
 import Codable_Utils
 @testable import MercadoLibreExample
 
+extension MercadoLibre.Item {
+    static var mock = Self(
+        id: "MCO53",
+        title: "Celular iphone",
+        domainId: "MCO-CELLPHONES",
+        category: "MCO123",
+        availableQuantity: 1,
+        acceptsMercadopago: true
+    )
+}
+
 class MercadoLibreApiTests: XCTestCase {
     
     var cancellables = Set<AnyCancellable>()
     
     func test_Search_Success() throws {
-        let mockResponse = MercadoLibre.SearchResponse(
-            results: [
-                MercadoLibre.Item(id: "first", title: "first")
-            ]
-        )
+        let mockResponse = MercadoLibre.SearchResponse(results: [.mock])
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
         let data = try mockResponse.encode(using: encoder)
@@ -50,13 +57,7 @@ class MercadoLibreApiTests: XCTestCase {
     func test_Search_Failure() throws {
         MercadoLibre.urlSession = .makeStub()
         URLSession.stub { request in
-            let response = HTTPURLResponse(
-                url: URL(string: "https://api.mercadolibre.com/sites/siteId/search?q=query")!,
-                statusCode: URLError.cannotLoadFromNetwork.rawValue,
-                httpVersion: nil,
-                headerFields: nil
-            )!
-            return (response, .init())
+            throw URLError(.cannotLoadFromNetwork)
         }
         
         let expectation = XCTestExpectation(description: "response")
@@ -65,9 +66,9 @@ class MercadoLibreApiTests: XCTestCase {
             .sink(
                 receiveCompletion: { completion in
                     if case let .failure(error) = completion {
-                        expectation.fulfill()
                         XCTAssertEqual(error.localizedDescription,
                                        "The operation couldn’t be completed. (NSURLErrorDomain error -2000.)")
+                        expectation.fulfill()
                     } else {
                         fatalError("This should not be executed")
                     }

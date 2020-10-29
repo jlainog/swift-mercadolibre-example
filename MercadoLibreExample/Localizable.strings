@@ -8,3 +8,10 @@
 
 "navigation.bar.title" = "Mercado Libre Search";
 "search.bar.title" = "Search";
+"navigation.detail.title" = "Detail";
+"detail.name" = "Name: ";
+"detail.category" = "Category: ";
+"detail.domain" = "Domain ID: ";
+"detail.acceptsMercadopago" = "Accepts MercadoPago: ";
+"true" = "true";
+"false" = "false";

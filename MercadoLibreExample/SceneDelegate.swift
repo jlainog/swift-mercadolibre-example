@@ -21,7 +21,7 @@ fileprivate extension SearchViewModel.Dependencies {
         search: {
             MercadoLibre
                 .search(query: $0, siteId: "MCO")
-                .map { $0.results.map(\.title) }
+                .map { $0.results }
                 .mapError {
                     ($0 as? URLError) ?? URLError(.cannotLoadFromNetwork)
                 }

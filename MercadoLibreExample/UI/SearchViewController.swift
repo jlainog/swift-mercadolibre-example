@@ -51,7 +51,7 @@ extension SearchViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = viewModel.results[indexPath.row]
+        cell.textLabel?.text = viewModel.results[indexPath.row].title
         return cell
     }
 }
@@ -115,12 +115,4 @@ private extension SearchViewController {
         }
         .store(in: &cancellables)
     }
-}
-
-extension SearchViewModel.Dependencies {
-    #if DEBUG
-    static let echo = Self(
-        search: { .just([$0]) }
-    )
-    #endif
 }

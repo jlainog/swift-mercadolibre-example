@@ -13,7 +13,7 @@ import CombineSchedulers
 class SearchViewModelTests: XCTestCase {
 
     func test_SearchTriggered() throws {
-        let testSubject = PassthroughSubject<[String], URLError>()
+        let testSubject = PassthroughSubject<[MercadoLibre.Item], URLError>()
         let testScheduler = DispatchQueue.testScheduler
         let sut = SearchViewModel(
             .init(
@@ -30,11 +30,11 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertEqual(sut.query, "iphone Xr")
         XCTAssertTrue(sut.isRequestInFlight)
         
-        testSubject.send(["1", "2"])
+        testSubject.send([.mock])
         testScheduler.advance(by: .milliseconds(500)) // advance delay
         testScheduler.advance() // receive on main queue
         XCTAssertFalse(sut.isRequestInFlight)
-        XCTAssertEqual(sut.results, ["1", "2"])
+        XCTAssertEqual(sut.results, [.mock])
         
         sut.textDidChange("ip")
         XCTAssertEqual(sut.query, "")
@@ -45,9 +45,9 @@ class SearchViewModelTests: XCTestCase {
         let testScheduler = DispatchQueue.testScheduler
         let sut = SearchViewModel(
             .init(
-                search: {
-                    AnyPublisher<[String], URLError>
-                        .just([$0])
+                search: { _ in
+                    AnyPublisher<[MercadoLibre.Item], URLError>
+                        .just([.mock])
                         .delay(for: .milliseconds(300), scheduler: testScheduler)
                         .eraseToAnyPublisher()
                 },
@@ -66,7 +66,7 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertTrue(sut.isRequestInFlight)
         
         testScheduler.advance(by: .milliseconds(300)) // advance search publisher delay
-        XCTAssertEqual(sut.results, ["second"])
+        XCTAssertEqual(sut.results, [.mock])
         XCTAssertFalse(sut.isRequestInFlight)
     }
     
@@ -75,7 +75,7 @@ class SearchViewModelTests: XCTestCase {
         let sut = SearchViewModel(
             .init(
                 search: { _ in
-                    AnyPublisher<[String], URLError>
+                    AnyPublisher<[MercadoLibre.Item], URLError>
                         .fail(error: URLError(.cannotLoadFromNetwork))
                         .eraseToAnyPublisher()
                 },

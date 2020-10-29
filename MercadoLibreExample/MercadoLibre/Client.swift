@@ -13,6 +13,10 @@ public enum MercadoLibre {
     public struct Item: Codable, Equatable {
         public var id: String
         public var title: String
+        public var domainId: String?
+        public var category: String?
+        public var availableQuantity: Int?
+        public var acceptsMercadopago: Bool?
     }
     
     public struct SearchResponse: Codable, Equatable {
