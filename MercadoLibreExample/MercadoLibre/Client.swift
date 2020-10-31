@@ -1,6 +1,10 @@
 import Foundation
 import Combine
 
+public struct MercadoLibreClient {
+    public var search: (String) -> AnyPublisher<[MercadoLibre.Item], URLError>
+}
+
 public enum MercadoLibre {
     static var urlSession: URLSession = .shared
     static let host = "api.mercadolibre.com"
@@ -25,7 +29,7 @@ public enum MercadoLibre {
     
     private static let seachPath = "/search"
     
-    public static func search(query: String, siteId: String) -> AnyPublisher<SearchResponse, Error> {
+    static func search(query: String, siteId: String) -> AnyPublisher<SearchResponse, Error> {
         var components = URLComponents()
         components.scheme = "https"
         components.host = host

@@ -1,60 +1,59 @@
 <UILayoutContainerView; frame = (0 0; 375 768); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray>; layer = <CALayer>>
    | <UINavigationTransitionView; frame = (0 0; 375 768); clipsToBounds = YES; autoresize = W+H; layer = <CALayer>>
    |    | <UIViewControllerWrapperView; frame = (0 0; 375 768); autoresize = W+H; layer = <CALayer>>
-   |    |    | <UITableView; frame = (0 0; 375 768); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, -92}; contentSize: {375, 44}; adjustedContentInset: {92, 0, 34, 0}; dataSource: <_UIFilteredDataSource>>
+   |    |    | <UITableView; frame = (0 0; 375 768); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, -88}; contentSize: {375, 44}; adjustedContentInset: {88, 0, 34, 0}; dataSource: <_UIFilteredDataSource>>
    |    |    |    | <UITableViewCell; frame = (0 0; 375 44); text = 'Celular iphone'; autoresize = W; layer = <CALayer>>
    |    |    |    |    | <_UISystemBackgroundView; frame = (0 0; 375 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
    |    |    |    |    |    | <UIView; frame = (0 0; 375 44); clipsToBounds = YES; layer = <CALayer>>
    |    |    |    |    | <UITableViewCellContentView; frame = (0 0; 375 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
-   |    |    |    |    |    | <UITableViewLabel; frame = (20 0; 335 44); text = 'Celular iphone'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    |    |    |    | <_UITableViewCellSeparatorView; frame = (20 43.5; 355 0.5); layer = <CALayer>>
-   |    |    |    |    | <_UITableViewCellSeparatorView; frame = (20 0; 355 0.5); layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 87.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 131.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 175.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 219.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 263.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 307.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 351.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 395.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 439.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 483.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 527.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 571.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 615.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 659.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 703.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 747.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 791.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 835.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 879.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 923.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 967.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 1011.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 1055.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 1099.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 1143.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (20 1187.5; 355 0.5); autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UIScrollViewScrollIndicator; frame = (369 601; 3 38); alpha = 0; autoresize = LM; layer = <CALayer>>
+   |    |    |    |    |    | <UITableViewLabel; frame = (16 0; 343 44); text = 'Celular iphone'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    |    | <_UITableViewCellSeparatorView; frame = (16 43.6667; 359 0.333333); layer = <CALayer>>
+   |    |    |    |    | <_UITableViewCellSeparatorView; frame = (16 0; 359 0.333333); layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 87.6667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 131.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 175.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 219.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 263.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 307.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 351.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 395.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 439.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 483.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 527.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 571.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 615.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 659.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 703.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 747.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 791.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 835.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 879.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 923.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 967.667; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 1011.67; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 1055.67; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 1099.67; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 1143.67; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 1187.67; 359 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UIScrollViewScrollIndicator; frame = (369 605; 3 38); alpha = 0; autoresize = LM; layer = <CALayer>>
    |    |    |    |    | <UIView; frame = (0 0; 3 38); layer = <CALayer>>
-   |    |    |    | <_UIScrollViewScrollIndicator; frame = (3 636; 369 3); alpha = 0; autoresize = TM; layer = <CALayer>>
+   |    |    |    | <_UIScrollViewScrollIndicator; frame = (3 640; 369 3); alpha = 0; autoresize = TM; layer = <CALayer>>
    |    |    |    |    | <UIView; frame = (0 0; 369 3); layer = <CALayer>>
-   | <UINavigationBar; frame = (0 48; 375 44); opaque = NO; autoresize = W; layer = <CALayer>>
-   |    | <_UIBarBackground; frame = (0 -48; 375 92); userInteractionEnabled = NO; layer = <CALayer>>
-   |    |    | <UIVisualEffectView; frame = (0 0; 375 92); layer = <CALayer>> effect=none
-   |    |    |    | <_UIVisualEffectBackdropView; frame = (0 0; 375 92); autoresize = W+H; userInteractionEnabled = NO; layer = <UICABackdropLayer>>
-   |    |    | <_UIBarBackgroundShadowView; frame = (0 92; 375 0.5); layer = <CALayer>> clientRequestedContentView effect=none
-   |    |    |    | <_UIBarBackgroundShadowContentImageView; frame = (0 0; 375 0.5); autoresize = W+H; userInteractionEnabled = NO; layer = <CALayer>>
-   |    | <UISearchBar; frame = (0 44; 375 0); text = ''; clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>>
+   | <UINavigationBar; frame = (0 44; 375 44); opaque = NO; autoresize = W; layer = <CALayer>>
+   |    | <_UIBarBackground; frame = (0 -44; 375 88); userInteractionEnabled = NO; layer = <CALayer>>
+   |    |    | <UIVisualEffectView; frame = (0 0; 375 88); layer = <CALayer>> effect=none
+   |    |    |    | <_UIVisualEffectBackdropView; frame = (0 0; 375 88); autoresize = W+H; userInteractionEnabled = NO; layer = <UICABackdropLayer>>
+   |    |    | <_UIBarBackgroundShadowView; frame = (0 88; 375 0.333333); layer = <CALayer>> clientRequestedContentView effect=none
+   |    |    |    | <_UIBarBackgroundShadowContentImageView; frame = (0 0; 375 0.333333); autoresize = W+H; userInteractionEnabled = NO; layer = <CALayer>>
+   |    | <UISearchBar; frame = (0 44; 375 0); text = 'First'; clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>>
    |    |    | <UIView; frame = (0 0; 375 0); autoresize = W+H; layer = <CALayer>>
    |    |    |    | <UISearchBarBackground; frame = (0 0; 375 0); userInteractionEnabled = NO; layer = <CALayer>>
    |    |    |    | <_UISearchBarSearchContainerView; frame = (0 0; 375 0); autoresize = W; gestureRecognizers = <NSArray>; layer = <CALayer>>
-   |    |    |    |    | <UISearchBarTextField; frame = (16 1; 343 0); text = ''; opaque = NO; gestureRecognizers = <NSArray>; placeholder = Search; borderStyle = RoundedRect; background = <_UITextFieldSystemBackgroundProvider: backgroundView=<_UISearchBarSearchFieldBackgroundView; frame = (0 0; 343 0); opaque = NO; autoresize = W+H; userInteractionEnabled = NO; layer = <CALayer>>, fillColor=(null), textfield=<UISearchBarTextField>>; layer = <CALayer>>
+   |    |    |    |    | <UISearchBarTextField; frame = (16 1; 343 0); text = 'First'; opaque = NO; gestureRecognizers = <NSArray>; placeholder = Search; borderStyle = RoundedRect; background = <_UITextFieldSystemBackgroundProvider: backgroundView=<_UISearchBarSearchFieldBackgroundView; frame = (0 0; 343 0); opaque = NO; autoresize = W+H; userInteractionEnabled = NO; layer = <CALayer>>, fillColor=(null), textfield=<UISearchBarTextField>>; layer = <CALayer>>
    |    |    |    |    |    | <_UISearchBarSearchFieldBackgroundView; frame = (0 0; 343 0); opaque = NO; autoresize = W+H; userInteractionEnabled = NO; layer = <CALayer>>
    |    |    |    |    |    |    | <_UISearchBarSearchFieldBackgroundView; frame = (0 0; 343 0); alpha = 0; opaque = NO; autoresize = W+H; userInteractionEnabled = NO; layer = <CALayer>>
-   |    |    |    |    |    | <UISearchBarTextFieldLabel; frame = (10 0; 54.5 0); text = 'Search'; alpha = 0; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    |    |    |    |    | <_UISearchTextFieldCanvasView; frame = (10 0; 333 0); opaque = NO; userInteractionEnabled = NO; layer = <_UITextTiledLayer>>
-   |    |    |    |    |    |    | <UITextSelectionView; frame = (0 0; 0 0); userInteractionEnabled = NO; layer = <CALayer>>
+   |    |    |    |    |    | <_UITextFieldClearButton; frame = (318.667 -9.33333; 18.6667 18); opaque = NO; layer = <CALayer>>
+   |    |    |    |    |    |    | <UIImageView; frame = (0 0; 18.6667 18); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer>>
+   |    |    |    |    |    | <_UISearchTextFieldCanvasView; frame = (10 0; 307 0); opaque = NO; userInteractionEnabled = NO; layer = <_UITextTiledLayer>>
    |    | <_UINavigationBarContentView; frame = (0 0; 375 44); layer = <CALayer>> layout=
-   |    |    | <UILabel; frame = (100.5 12; 174 20.5); text = 'Mercado Libre Search'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
    |    | <UIView; frame = (0 0; 0 0); userInteractionEnabled = NO; layer = <CALayer>>

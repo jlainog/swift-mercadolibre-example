@@ -30,6 +30,7 @@ final class DetailViewController: UIViewController {
             stack.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
             stack.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: 8),
             stack.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            stack.heightAnchor.constraint(greaterThanOrEqualToConstant: 70)
         ])
         
         buildLabel(prefix: "detail.name", selected.title)

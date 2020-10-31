@@ -15,3 +15,5 @@
 "detail.acceptsMercadopago" = "Accepts MercadoPago: ";
 "true" = "true";
 "false" = "false";
+"navigation.search.uikit" = "Search view in UIKit";
+"navigation.search.swiftui" = "Search view in SwiftUI";

@@ -1,7 +1,25 @@
 import UIKit
 import Combine
+import SwiftUI
 
-class SearchViewController: UITableViewController {
+struct SearchViewControllerView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = UINavigationController
+    
+    @ObservedObject var viewModel: SearchViewModel
+    
+    func makeUIViewController(context: Context) -> UINavigationController {
+        UINavigationController(rootViewController: SearchViewController(viewModel: viewModel))
+    }
+    
+    func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+//        if uiViewController.presentedViewController == nil {
+//            viewModel.clearDetail()
+//        }
+    }
+    
+}
+
+final class SearchViewController: UITableViewController {
     private let cellIdentifier = "cellIdentifier"
     private var cancellables = Set<AnyCancellable>()
     private let activityIndicator = UIActivityIndicatorView(style: .medium)
@@ -21,17 +39,22 @@ class SearchViewController: UITableViewController {
         
         let searchController = UISearchController()
         
+        searchController.searchBar.text = viewModel.query
         searchController.searchBar.autocapitalizationType = .none
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "search.bar.title".localized
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         
-        self.title = "navigation.bar.title".localized
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         configureBindings()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.searchController?.isActive = true
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -73,6 +96,10 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         resignFirstResponder()
     }
+    
+    func didPresentSearchController(_ searchController: UISearchController) {
+         searchController.searchBar.becomeFirstResponder()
+     }
 }
 
 // MARK: Private Methods
@@ -105,12 +132,12 @@ private extension SearchViewController {
         viewModel.$selectedResult.sink { [weak self] (result) in
             guard let self = self else { return }
             if let selected = result {
-                self.navigationController?.pushViewController(
-                    DetailViewController(selected),
+                self.present(
+                    UINavigationController(rootViewController: DetailViewController(selected)),
                     animated: true
                 )
             } else {
-                self.navigationController?.popToViewController(self, animated: true)
+                self.dismiss(animated: true, completion: nil)
             }
         }
         .store(in: &cancellables)

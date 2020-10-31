@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2106FDA1254D9FFE00B147E3 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106FDA0254D9FFE00B147E3 /* AppViewModel.swift */; };
+		2106FDA5254DA00F00B147E3 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106FDA4254DA00F00B147E3 /* AppDependencies.swift */; };
+		2106FDAB254DA16A00B147E3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106FDAA254DA16A00B147E3 /* RootView.swift */; };
+		2106FDAF254DA2F300B147E3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106FDAE254DA2F300B147E3 /* SearchView.swift */; };
 		215B40CA2549F51500604B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B40C92549F51500604B52 /* AppDelegate.swift */; };
 		215B40CC2549F51500604B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B40CB2549F51500604B52 /* SceneDelegate.swift */; };
 		215B40CE2549F51500604B52 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B40CD2549F51500604B52 /* SearchViewController.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2106FDA0254D9FFE00B147E3 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		2106FDA4254DA00F00B147E3 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		2106FDAA254DA16A00B147E3 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2106FDAE254DA2F300B147E3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		215B40C62549F51500604B52 /* MercadoLibreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		215B40C92549F51500604B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		215B40CB2549F51500604B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +165,8 @@
 		215B4159254A7D2900604B52 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2106FDAA254DA16A00B147E3 /* RootView.swift */,
+				2106FDAE254DA2F300B147E3 /* SearchView.swift */,
 				215B40CD2549F51500604B52 /* SearchViewController.swift */,
 				215B4128254A3C4500604B52 /* DetailViewController.swift */,
 			);
@@ -166,6 +176,8 @@
 		215B415A254A7D8E00604B52 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2106FDA0254D9FFE00B147E3 /* AppViewModel.swift */,
+				2106FDA4254DA00F00B147E3 /* AppDependencies.swift */,
 				215B4139254A455300604B52 /* SearchViewModel.swift */,
 			);
 			path = Core;
@@ -291,12 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2106FDA1254D9FFE00B147E3 /* AppViewModel.swift in Sources */,
+				2106FDA5254DA00F00B147E3 /* AppDependencies.swift in Sources */,
 				215B4163254A7EBD00604B52 /* String+Localized.swift in Sources */,
 				215B40CE2549F51500604B52 /* SearchViewController.swift in Sources */,
 				215B411B254A066100604B52 /* Cancellation.swift in Sources */,
 				215B413A254A455300604B52 /* SearchViewModel.swift in Sources */,
 				215B4124254A09D000604B52 /* Client.swift in Sources */,
 				215B4116254A062D00604B52 /* AnyPublisher+Helpers.swift in Sources */,
+				2106FDAF254DA2F300B147E3 /* SearchView.swift in Sources */,
+				2106FDAB254DA16A00B147E3 /* RootView.swift in Sources */,
 				215B40CA2549F51500604B52 /* AppDelegate.swift in Sources */,
 				215B40CC2549F51500604B52 /* SceneDelegate.swift in Sources */,
 				215B4129254A3C4500604B52 /* DetailViewController.swift in Sources */,

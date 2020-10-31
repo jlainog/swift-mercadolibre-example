@@ -1,7 +1,7 @@
 import Combine
 import CombineSchedulers
 
-class SearchViewModel {
+final class SearchViewModel: ObservableObject {
     struct Dependencies {
         var search: (String) -> AnyPublisher<[MercadoLibre.Item], URLError>
         var mainQueue: AnySchedulerOf<DispatchQueue> = DispatchQueue.main.eraseToAnyScheduler()
