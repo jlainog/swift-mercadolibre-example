@@ -25,10 +25,20 @@ struct SearchView: View {
             .padding(.top)
             
             List {
-                ForEach(viewModel.results, id: \.id) {
-                    Text($0.title)
+                ForEach(
+                    ContiguousArray(zip(viewModel.results.indices, viewModel.results)),
+                    id: \(Int, MercadoLibre.Item).1.id
+                ) { index, item in
+                    Button(item.title, action: { viewModel.navigateToDetail(at: index) })
                 }
             }
+            .sheet(
+                item: .init(
+                    get: { viewModel.selectedResult },
+                    set: { _ in viewModel.clearDetail() }
+                ),
+                content: DetailView.init(selected:)
+            )
         }
     }
 }
