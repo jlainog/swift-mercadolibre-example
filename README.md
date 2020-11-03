@@ -17,7 +17,7 @@ Tests are separeted on 3 sides:
 
 - Logic: consist on testing the [ViewModel](/MercadoLibreExampleTests/SearchViewModelTests.swift).
 - Client: consist on testing [MercadoLibre Client](/MercadoLibreExampleTests/MercadoLibreApiTests.swift).
-- Integration: consist on testing [UI](/MercadoLibreTests/SearchViewModelTests.swift) and navigation.
+- Integration: consist on testing [UI](/MercadoLibreTests/UI) and navigation.
 
 
 ## Dependencies

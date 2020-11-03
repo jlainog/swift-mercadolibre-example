@@ -1,10 +1,3 @@
-//
-//  SearchViewControllerTests.swift
-//  MercadoLibreExampleTests
-//
-//  Created by Jaime Laino on 28/10/20.
-//
-
 import XCTest
 import Combine
 import CombineSchedulers
