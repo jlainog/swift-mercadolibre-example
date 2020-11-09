@@ -11,12 +11,14 @@ The UI is as dumb as posible displaying the state from the ViewModel and sending
 This allow to a easy migration to Redux like architecture like [TCA](https://github.com/pointfreeco/swift-composable-architecture)
 
 ## UT Coverage
-![coverage](/coverage_1.png)
+
+![coverage_app](/coverage_app.png)
+![coverage_client](/coverage_client.png)
 
 Tests are separeted on 3 sides:
 
 - Logic: consist on testing the [ViewModel](/MercadoLibreExampleTests/SearchViewModelTests.swift).
-- Client: consist on testing [MercadoLibre Client](/MercadoLibreExampleTests/MercadoLibreApiTests.swift).
+- Client: consist on testing [MercadoLibre Client](/MercadoLibreClient/Tests/MercadoLibreClientLiveTests/MercadoLibreClientLiveTests.swift).
 - Integration: consist on testing [UI](/MercadoLibreTests/UI) and navigation.
 
 
@@ -38,6 +40,4 @@ A personal package that leverage type inference when working with codable.
 ## TODO Next
 * Show an alert when an error occurs. (right now the VM gets the error but is not displayed in UI)
 * Improve UI by using UICollectionView + CompositionalLayout + DiffableDataSource
-* Separate *Mercado Libre Client* to its own package to make more explicitly the depency to it
-* Separate *Mercado Libre Live Implementation* so it is only imported and used on the SceneDelegate when launching the app
 * Cookup Previews for Search and Detail ViewControllers

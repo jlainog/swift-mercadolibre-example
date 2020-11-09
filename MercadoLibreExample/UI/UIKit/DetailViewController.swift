@@ -1,4 +1,5 @@
 import UIKit
+import MercadoLibreClient
 
 final class DetailViewController: UIViewController {
     private var stack: UIStackView = {

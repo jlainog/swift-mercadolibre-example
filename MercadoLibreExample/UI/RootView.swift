@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MercadoLibreClient
 
 private let readMe = """
   This screen demonstrates how to share a state with two screens one build in SwiftUI and the other in UIKit. Each get the same ViewModel so any change to one of them will be displayed in the other.\
@@ -61,23 +62,4 @@ extension AppDependencies {
         mercadolibreClient: .echo,
         mainQueue: DispatchQueue.main.eraseToAnyScheduler()
     )
-}
-
-extension MercadoLibreClient {
-    static let echo = Self(
-        search: { .just([.mock($0)]) }
-    )
-}
-
-extension MercadoLibre.Item {
-    static func mock(_ value: String) -> Self {
-        Self(
-            id: "MCO\(value)",
-            title: value,
-            domainId: "MCO-\(value)",
-            category: "MCO123",
-            availableQuantity: 1,
-            acceptsMercadopago: true
-        )
-    }
 }

@@ -1,5 +1,6 @@
 import UIKit
 import Combine
+import MercadoLibreClient
 import SwiftUI
 
 struct SearchViewControllerView: UIViewControllerRepresentable {

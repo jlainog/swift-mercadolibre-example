@@ -2,6 +2,7 @@ import XCTest
 import Combine
 import CombineSchedulers
 import SnapshotTesting
+import MercadoLibreClient
 @testable import MercadoLibreExample
 
 class SearchViewControllerTests: XCTestCase {

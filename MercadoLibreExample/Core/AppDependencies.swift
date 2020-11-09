@@ -1,4 +1,5 @@
 import Foundation
+import MercadoLibreClient
 import CombineSchedulers
 
 struct AppDependencies {

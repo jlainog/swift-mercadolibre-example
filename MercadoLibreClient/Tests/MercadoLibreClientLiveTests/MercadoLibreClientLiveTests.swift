@@ -1,52 +1,36 @@
-//
-//  MercadoLibreApiTests.swift
-//  MercadoLibreExampleTests
-//
-//  Created by Jaime Laino on 28/10/20.
-//
-
 import XCTest
 import Combine
 import Codable_Utils
-@testable import MercadoLibreExample
+import MercadoLibreClient
+@testable import MercadoLibreClientLive
 
-extension MercadoLibre.Item {
-    static var mock = Self(
-        id: "MCO53",
-        title: "Celular iphone",
-        domainId: "MCO-CELLPHONES",
-        category: "MCO123",
-        availableQuantity: 1,
-        acceptsMercadopago: true
-    )
-}
-
-class MercadoLibreApiTests: XCTestCase {
+final class MercadoLibreClientLiveTests: XCTestCase {
     
     var cancellables = Set<AnyCancellable>()
     
     func test_Search_Success() throws {
-        let mockResponse = MercadoLibre.SearchResponse(results: [.mock])
+        let mockResponse = MercadoLibre.SearchResponse(results: [.mock("Cellular")])
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
         let data = try mockResponse.encode(using: encoder)
         let query = "first"
         let siteId = "siteID"
        
-        MercadoLibre.urlSession = .makeStub()
+        MercadoLibreClientLive.urlSession = .makeStub()
         URLSession.stub { request in
             XCTAssertEqual(request.url, URL(string: "https://api.mercadolibre.com/sites/\(siteId)/search?q=\(query)"))
             return (.init(), data)
         }
         
         let expectation = XCTestExpectation(description: "response")
-        MercadoLibre
-            .search(query: query, siteId: siteId)
+        MercadoLibreClient
+            .live(siteId: siteId)
+            .search(query)
             .sink(
                 receiveCompletion: { _ in },
                 receiveValue: { response in
                     expectation.fulfill()
-                    XCTAssertEqual(response, mockResponse)
+                    XCTAssertEqual(response, mockResponse.results)
                 }
             )
             .store(in: &cancellables)
@@ -55,14 +39,15 @@ class MercadoLibreApiTests: XCTestCase {
     }
 
     func test_Search_Failure() throws {
-        MercadoLibre.urlSession = .makeStub()
+        MercadoLibreClientLive.urlSession = .makeStub()
         URLSession.stub { request in
             throw URLError(.cannotLoadFromNetwork)
         }
         
         let expectation = XCTestExpectation(description: "response")
-        MercadoLibre
-            .search(query: "query", siteId: "siteId")
+        MercadoLibreClient
+            .live(siteId: "siteId")
+            .search("query")
             .sink(
                 receiveCompletion: { completion in
                     if case let .failure(error) = completion {
@@ -118,3 +103,4 @@ class MockURLProtocol: URLProtocol {
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
 }
+

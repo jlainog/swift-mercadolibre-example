@@ -1,4 +1,5 @@
 import SwiftUI
+import MercadoLibreClient
 
 struct DetailView: View {
     

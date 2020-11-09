@@ -1,4 +1,5 @@
 import SwiftUI
+import MercadoLibreClient
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel

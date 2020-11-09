@@ -1,5 +1,6 @@
 import UIKit
 import SwiftUI
+import MercadoLibreClientLive
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,22 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 fileprivate extension AppDependencies {
     static let live = Self(
-        mercadolibreClient: .live,
+        mercadolibreClient: .live(siteId: "MCO"),
         mainQueue: DispatchQueue.main.eraseToAnyScheduler()
-    )
-}
-
-fileprivate extension MercadoLibreClient {
-    /// Live client: calls to mercado libre API
-    static let live = Self(
-        search: {
-            MercadoLibre
-                .search(query: $0, siteId: "MCO")
-                .map { $0.results }
-                .mapError {
-                    ($0 as? URLError) ?? URLError(.cannotLoadFromNetwork)
-                }
-                .eraseToAnyPublisher()
-        }
     )
 }

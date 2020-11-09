@@ -20,19 +20,19 @@
 		215B41042549F6AB00604B52 /* Codable-Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 215B41032549F6AB00604B52 /* Codable-Utils */; };
 		215B4116254A062D00604B52 /* AnyPublisher+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4115254A062D00604B52 /* AnyPublisher+Helpers.swift */; };
 		215B411B254A066100604B52 /* Cancellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B411A254A066100604B52 /* Cancellation.swift */; };
-		215B4124254A09D000604B52 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4123254A09D000604B52 /* Client.swift */; };
 		215B4129254A3C4500604B52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4128254A3C4500604B52 /* DetailViewController.swift */; };
 		215B412E254A452A00604B52 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B412D254A452A00604B52 /* SearchViewModelTests.swift */; };
 		215B413A254A455300604B52 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4139254A455300604B52 /* SearchViewModel.swift */; };
 		215B4148254A70FB00604B52 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4147254A70FB00604B52 /* SearchViewControllerTests.swift */; };
 		215B4152254A72EC00604B52 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 215B4151254A72EC00604B52 /* SnapshotTesting */; };
-		215B4156254A762E00604B52 /* MercadoLibreApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4155254A762E00604B52 /* MercadoLibreApiTests.swift */; };
 		215B415E254A7DE000604B52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 215B415D254A7DE000604B52 /* Localizable.strings */; };
 		215B4163254A7EBD00604B52 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4162254A7EBD00604B52 /* String+Localized.swift */; };
 		21C214322551A3260055AE41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C214312551A3260055AE41 /* DetailView.swift */; };
 		21C2143D2551AE990055AE41 /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2143C2551AE990055AE41 /* SearchViewTests.swift */; };
 		21C214432551B7F90055AE41 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C214422551B7F90055AE41 /* RootViewTests.swift */; };
 		21C214492551BE7E0055AE41 /* Snapshot+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C214482551BE7E0055AE41 /* Snapshot+SwiftUI.swift */; };
+		21C214502558B5CB0055AE41 /* MercadoLibreClient in Frameworks */ = {isa = PBXBuildFile; productRef = 21C2144F2558B5CB0055AE41 /* MercadoLibreClient */; };
+		21C214522558B5CB0055AE41 /* MercadoLibreClientLive in Frameworks */ = {isa = PBXBuildFile; productRef = 21C214512558B5CB0055AE41 /* MercadoLibreClientLive */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,19 +61,18 @@
 		215B40E22549F51600604B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		215B4115254A062D00604B52 /* AnyPublisher+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Helpers.swift"; sourceTree = "<group>"; };
 		215B411A254A066100604B52 /* Cancellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellation.swift; sourceTree = "<group>"; };
-		215B4123254A09D000604B52 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		215B4128254A3C4500604B52 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		215B412D254A452A00604B52 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		215B4139254A455300604B52 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		215B413F254A4C1500604B52 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		215B4147254A70FB00604B52 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
-		215B4155254A762E00604B52 /* MercadoLibreApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreApiTests.swift; sourceTree = "<group>"; };
 		215B415D254A7DE000604B52 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		215B4162254A7EBD00604B52 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		21C214312551A3260055AE41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		21C2143C2551AE990055AE41 /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
 		21C214422551B7F90055AE41 /* RootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
 		21C214482551BE7E0055AE41 /* Snapshot+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapshot+SwiftUI.swift"; sourceTree = "<group>"; };
+		21C2144C2558B06A0055AE41 /* MercadoLibreClient */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MercadoLibreClient; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +81,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				215B40FE2549F59000604B52 /* CombineSchedulers in Frameworks */,
+				21C214502558B5CB0055AE41 /* MercadoLibreClient in Frameworks */,
+				21C214522558B5CB0055AE41 /* MercadoLibreClientLive in Frameworks */,
 				215B41042549F6AB00604B52 /* Codable-Utils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +101,7 @@
 		215B40BD2549F51500604B52 = {
 			isa = PBXGroup;
 			children = (
+				21C2144C2558B06A0055AE41 /* MercadoLibreClient */,
 				215B413F254A4C1500604B52 /* README.md */,
 				215B40C82549F51500604B52 /* MercadoLibreExample */,
 				215B40DF2549F51600604B52 /* MercadoLibreExampleTests */,
@@ -123,7 +125,6 @@
 				215B4161254A7EB100604B52 /* Extensions */,
 				215B4114254A061C00604B52 /* Combine */,
 				215B415A254A7D8E00604B52 /* Core */,
-				215B411F254A068C00604B52 /* MercadoLibre */,
 				215B4159254A7D2900604B52 /* UI */,
 				215B40C92549F51500604B52 /* AppDelegate.swift */,
 				215B40CB2549F51500604B52 /* SceneDelegate.swift */,
@@ -141,7 +142,6 @@
 				215B40E22549F51600604B52 /* Info.plist */,
 				21C2143B2551AE740055AE41 /* UI */,
 				215B412D254A452A00604B52 /* SearchViewModelTests.swift */,
-				215B4155254A762E00604B52 /* MercadoLibreApiTests.swift */,
 			);
 			path = MercadoLibreExampleTests;
 			sourceTree = "<group>";
@@ -153,14 +153,6 @@
 				215B411A254A066100604B52 /* Cancellation.swift */,
 			);
 			path = Combine;
-			sourceTree = "<group>";
-		};
-		215B411F254A068C00604B52 /* MercadoLibre */ = {
-			isa = PBXGroup;
-			children = (
-				215B4123254A09D000604B52 /* Client.swift */,
-			);
-			path = MercadoLibre;
 			sourceTree = "<group>";
 		};
 		215B4150254A72EC00604B52 /* Frameworks */ = {
@@ -246,6 +238,8 @@
 			packageProductDependencies = (
 				215B40FD2549F59000604B52 /* CombineSchedulers */,
 				215B41032549F6AB00604B52 /* Codable-Utils */,
+				21C2144F2558B5CB0055AE41 /* MercadoLibreClient */,
+				21C214512558B5CB0055AE41 /* MercadoLibreClientLive */,
 			);
 			productName = MercadoLibreExample;
 			productReference = 215B40C62549F51500604B52 /* MercadoLibreExample.app */;
@@ -346,7 +340,6 @@
 				215B40CE2549F51500604B52 /* SearchViewController.swift in Sources */,
 				215B411B254A066100604B52 /* Cancellation.swift in Sources */,
 				215B413A254A455300604B52 /* SearchViewModel.swift in Sources */,
-				215B4124254A09D000604B52 /* Client.swift in Sources */,
 				215B4116254A062D00604B52 /* AnyPublisher+Helpers.swift in Sources */,
 				2106FDAF254DA2F300B147E3 /* SearchView.swift in Sources */,
 				2106FDAB254DA16A00B147E3 /* RootView.swift in Sources */,
@@ -364,7 +357,6 @@
 				215B4148254A70FB00604B52 /* SearchViewControllerTests.swift in Sources */,
 				21C214432551B7F90055AE41 /* RootViewTests.swift in Sources */,
 				21C214492551BE7E0055AE41 /* Snapshot+SwiftUI.swift in Sources */,
-				215B4156254A762E00604B52 /* MercadoLibreApiTests.swift in Sources */,
 				215B412E254A452A00604B52 /* SearchViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -659,6 +651,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 215B414B254A718B00604B52 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		21C2144F2558B5CB0055AE41 /* MercadoLibreClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MercadoLibreClient;
+		};
+		21C214512558B5CB0055AE41 /* MercadoLibreClientLive */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MercadoLibreClientLive;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

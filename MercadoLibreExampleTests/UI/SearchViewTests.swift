@@ -3,6 +3,7 @@ import Combine
 import CombineSchedulers
 import SnapshotTesting
 import SwiftUI
+import MercadoLibreClient
 @testable import MercadoLibreExample
 
 class SearchViewTests: XCTestCase {

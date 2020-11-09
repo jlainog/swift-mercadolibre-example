@@ -8,7 +8,19 @@
 import XCTest
 import Combine
 import CombineSchedulers
+import MercadoLibreClient
 @testable import MercadoLibreExample
+
+extension MercadoLibre.Item {
+    static var mock = Self(
+        id: "MCO53",
+        title: "Celular iphone",
+        domainId: "MCO-CELLPHONES",
+        category: "MCO123",
+        availableQuantity: 1,
+        acceptsMercadopago: true
+    )
+}
 
 class SearchViewModelTests: XCTestCase {
 

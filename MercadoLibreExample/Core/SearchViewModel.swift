@@ -1,4 +1,5 @@
 import Combine
+import MercadoLibreClient
 import CombineSchedulers
 
 final class SearchViewModel: ObservableObject {
