@@ -17,9 +17,9 @@ This allow to a easy migration to Redux like architecture like [TCA](https://git
 
 Tests are separeted on 3 sides:
 
-- Logic: consist on testing the [ViewModel](/MercadoLibreExampleTests/SearchViewModelTests.swift).
-- Client: consist on testing [MercadoLibre Client](/MercadoLibreClient/Tests/MercadoLibreClientLiveTests/MercadoLibreClientLiveTests.swift).
-- Integration: consist on testing [UI](/MercadoLibreTests/UI) and navigation.
+- Logic: consist on testing the [ViewModel](/UnitTests/SearchViewModelTests.swift).
+- Client: consist on testing [MercadoLibre Client](/MercadoLibreClient/Tests/MercadoLibreClientLiveTests/LiveClientTests.swift).
+- Integration: consist on testing [UI](/SnapshotTests/) and navigation.
 
 
 ## Dependencies

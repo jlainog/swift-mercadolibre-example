@@ -1,0 +1,40 @@
+{
+  "configurations" : [
+    {
+      "id" : "B605589D-48F8-4830-88BA-BFBDE917AC82",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:MercadoLibreExample.xcodeproj",
+          "identifier" : "215B40C52549F51500604B52",
+          "name" : "MercadoLibreExample"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MercadoLibreClient",
+        "identifier" : "MercadoLibreClientLiveTests",
+        "name" : "MercadoLibreClientLiveTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MercadoLibreExample.xcodeproj",
+        "identifier" : "215B40DB2549F51600604B52",
+        "name" : "UnitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
