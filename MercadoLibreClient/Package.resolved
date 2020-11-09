@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Codable-Utils",
+        "repositoryURL": "https://github.com/jlainog/Codable-Utils",
+        "state": {
+          "branch": null,
+          "revision": "9f2a0a656cba9f15c06c652ff6eda66260223faa",
+          "version": "0.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

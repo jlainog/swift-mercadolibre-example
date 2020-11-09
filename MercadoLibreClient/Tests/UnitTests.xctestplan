@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "A14261CA-60D4-4871-8CD6-265FD223BE26",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "MercadoLibreClientLiveTests",
+        "name" : "MercadoLibreClientLiveTests"
+      }
+    }
+  ],
+  "version" : 1
+}
